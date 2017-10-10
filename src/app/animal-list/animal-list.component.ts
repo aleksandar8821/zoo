@@ -22,4 +22,8 @@ export class AnimalListComponent implements OnInit {
   ngOnInit() {
   }
 
+  remove(index){
+  	this.list.splice(index);
+  }
+
 }

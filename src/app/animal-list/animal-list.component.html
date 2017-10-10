@@ -5,11 +5,12 @@
 		<td>species</td>
 		<td>date of birth</td>
 	</tr>
-	<tr *ngFor="let animal of list">
+	<tr *ngFor="let animal of list;let index = index">
 		<td>{{animal.name}}</td>
 		<td>{{animal.species}}</td>
 		<td *ngIf="animal.dateOfBirth">{{animal.dateOfBirth}}</td>
 		<td *ngIf="!animal.dateOfBirth">Nepoznato</td>
+		<td><button (click) = "remove(index)">Remove</button></td>
 	</tr>
 </table>
 
