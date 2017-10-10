@@ -11,7 +11,7 @@ export class AnimalListComponent implements OnInit {
 		{"name": "dog", "species": "dog", "dateOfBirth": "18.07.2011."},
 		{"name": "piggeon", "species": "bird", "dateOfBirth": "25.07.2011."},
 		{"name": "tunfish", "species": "fish", "dateOfBirth": "18.09.2015."},
-		{"name": "raven", "species": "bird", "dateOfBirth": "14.01.2014."}
+		{"name": "raven", "species": "bird", "dateOfBirth": ""}
 		
 	]
 

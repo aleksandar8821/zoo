@@ -8,7 +8,8 @@
 	<tr *ngFor="let animal of list">
 		<td>{{animal.name}}</td>
 		<td>{{animal.species}}</td>
-		<td>{{animal.dateOfBirth}}</td>
+		<td *ngIf="animal.dateOfBirth">{{animal.dateOfBirth}}</td>
+		<td *ngIf="!animal.dateOfBirth">Nepoznato</td>
 	</tr>
 </table>
 
