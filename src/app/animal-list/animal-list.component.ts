@@ -57,4 +57,9 @@ export class AnimalListComponent implements OnInit {
   	this.list.splice(index);
   }
 
+  moveToTop(index){
+  	let arrayOfObjects = this.list.splice(index);
+  	this.list.unshift(arrayOfObjects[0]);
+  }
+
 }

@@ -11,6 +11,7 @@
 		<td *ngIf="animal.dateOfBirth">{{animal.dateOfBirth}}</td>
 		<td *ngIf="!animal.dateOfBirth">Nepoznato</td>
 		<td><button (click) = "remove(index)">Remove</button></td>
+		<td><button (click) = "moveToTop(index)">Move to top</button></td>
 	</tr>
 </table>
 
